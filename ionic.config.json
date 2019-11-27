@@ -1,5 +1,7 @@
 {
   "name": "Traimrun",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
