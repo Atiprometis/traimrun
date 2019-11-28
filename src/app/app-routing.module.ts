@@ -12,6 +12,18 @@ const routes: Routes = [
     path: 'create-challenge',
     loadChildren: () => import('./pages/create-challenge/create-challenge.module').then( m => m.CreateChallengePageModule)
   },
+  {
+    path: 'tab',
+    loadChildren: () => import('./tabs/tab/tab.module').then( m => m.TabPageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('./tabs/tab1/tab1.module').then( m => m.Tab1PageModule)
+  },
+  {
+    path: 'tab2',
+    loadChildren: () => import('./tabs/tab2/tab2.module').then( m => m.Tab2PageModule)
+  },
   
 ];
 
