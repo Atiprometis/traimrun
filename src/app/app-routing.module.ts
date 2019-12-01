@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'mission', pathMatch: 'full' },
-  { path: 'mission', loadChildren: () => import('./mission/mission.module').then( m => m.MissionPageModule)},
+  { path: 'mission', loadChildren: () => import('./pages/mission/mission.module').then( m => m.MissionPageModule)},
   {
     path: 'challenge',
     loadChildren: () => import('./pages/challenge/challenge.module').then( m => m.ChallengePageModule)
