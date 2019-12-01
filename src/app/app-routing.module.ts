@@ -24,6 +24,18 @@ const routes: Routes = [
     path: 'tab2',
     loadChildren: () => import('./tabs/tab2/tab2.module').then( m => m.Tab2PageModule)
   },
+  {
+    path: 'more',
+    loadChildren: () => import('./pages/more/more.module').then( m => m.MorePageModule)
+  },
+  {
+    path: 'history',
+    loadChildren: () => import('./pages/history/history.module').then( m => m.HistoryPageModule)
+  },
+  {
+    path: 'run',
+    loadChildren: () => import('./pages/run/run.module').then( m => m.RunPageModule)
+  },
   
 ];
 
